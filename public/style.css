@@ -1,0 +1,24 @@
+ h1{
+     color: white;
+/* position: center;  */
+}
+ body{
+     background: black;
+     text-decoration-color: white;
+ }
+ ul {
+/* background: gray; */
+/* border: 2px solid black; */
+display: grid;
+grid-template-columns: 32% 32% 32%;
+column-gap: 10px;
+row-gap: 10px;
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background: white;
+}
