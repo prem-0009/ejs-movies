@@ -36,10 +36,14 @@ li {
 
 .image{
     grid-area: image;
+    justify-content: center;
 }
 .title{
+    display: grid;
     grid-area: title;
-    /* justify-content: center; */
+    align-items: center;
+
+    justify-content: center;
 }
 .main{
     grid-area: main;

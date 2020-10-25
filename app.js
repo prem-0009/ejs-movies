@@ -5,13 +5,13 @@ console.clear();
 
 //set the view for express
 app.set('view engine','ejs');
-app.set('views',path.join(__dirname, 'views/main'));
+app.set('views',path.join(__dirname, 'views'));
 
-//use static assest
+// //use static assest
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/root', require('./routes/movieRoutes.js'));
-const port = 3001;
+app.use('/', require('./routes/movieRoutes.js'));
+const port = 3000;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
